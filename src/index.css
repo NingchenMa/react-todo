@@ -241,3 +241,47 @@ hr {
   border: 0.1em solid hsl(var(--accent) / 0.3);
   box-shadow: 0 -1em 3em hsl(var(--muted)), 0 1em 3em hsl(var(--accent) / 0.2);
 }
+
+/* Customize the confirm dialog box */
+.confirmBox {
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Style the confirm dialog box buttons */
+.confirmBox button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin-right: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.confirmBox button:hover {
+  background-color: #0069d9;
+}
+
+.confirmBox button:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 3px rgba(0, 123, 255, 0.5);
+}
+
+.confirmBox button:last-of-type {
+  background-color: #dc3545;
+}
+
+.confirmBox button:last-of-type:hover {
+  background-color: #c82333;
+}
+
+.confirmBox button:last-of-type:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 3px rgba(220, 53, 69, 0.5);
+}
