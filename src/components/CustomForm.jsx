@@ -7,7 +7,6 @@ const CustomForm = ({addTask}) => {
 
     const handleFormSubmit = (e) => {
         e.preventDefault()
-        //console.log(e)
         addTask({
             name: task,
             checked: false,
@@ -21,7 +20,6 @@ const CustomForm = ({addTask}) => {
             className="todo"
             onSubmit={handleFormSubmit}
         >
-            {/* <p>{task}</p> */}
 
             <div className="wrapper">
 
@@ -30,17 +28,17 @@ const CustomForm = ({addTask}) => {
                     id="task"
                     className="input"
                     value={task}
-                    onInput={(e)=>{ setTask(e.target.value)}}
+                    onChange={(e)=>{ setTask(e.target.value)}}
                     required
                     autoFocus
                     maxLength={60}
-                    placeholder="Enter Task"
+                    placeholder="Enter Task please, this placeholder is not working..."
                 />
-                <label 
+                <label
                     htmlFor="task"
                     className="label"
                 >
-                    Enter Task
+                    Enter Task :)
                 </label>
             </div>
 
