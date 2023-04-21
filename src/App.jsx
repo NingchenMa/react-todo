@@ -14,7 +14,6 @@ function App() {
 
   const addTask = (task) => {
     setTasks( prevState => [...prevState, task] );
-    //console.log(tasks);
   }
 
   const removeTask = (task) => {
